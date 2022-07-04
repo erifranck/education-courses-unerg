@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import Chart from "react-apexcharts";
 
 import Adminsidebar from "../components/Adminsidebar";
 import AdminTopnav from "../components/AdminTopnav";
@@ -76,112 +75,6 @@ const orderlList = [
     date: "22.05.2020",
   },
 ];
-
-const lineChart = {
-  labels: [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ],
-  series: [
-    {
-      name: "",
-      data: [
-        35, 16, 34, 36, 18, 35, 26, 34, 26, 18, 36, 18, 36, 34, 36, 18, 16, 18,
-      ],
-    },
-    {
-      name: "",
-      data: [12, 24, 12, 11, 7, 12, 34, 12, 11, 7, 11, 7, 34, 12, 11, 7, 11, 7],
-    },
-  ],
-  options: {
-    chart: {
-      height: 100,
-      type: "bar",
-      // width:'50%',
-      stacked: true,
-      toolbar: {
-        show: false,
-      },
-    },
-    responsive: [
-      {
-        breakpoint: 480,
-        options: {
-          legend: {
-            position: "bottom",
-            offsetX: -10,
-            offsetY: 0,
-          },
-        },
-      },
-    ],
-    plotOptions: {
-      columnWidth: "40%",
-      bar: {
-        horizontal: false,
-        borderRadius: 10,
-      },
-    },
-    dataLabels: {
-      enabled: false,
-    },
-    legend: {
-      show: false,
-    },
-    fill: {
-      opacity: 1,
-    },
-  },
-};
-
-const pieChart = {
-  series: [44, 55, 41, 17, 15],
-  options: {
-    chart: {
-      type: "donut",
-    },
-    responsive: [
-      {
-        breakpoint: 480,
-        options: {
-          chart: {
-            width: 300,
-          },
-          legend: {
-            position: "bottom",
-          },
-          stacked: true,
-          toolbar: {
-            show: false,
-          },
-        },
-      },
-    ],
-    dataLabels: {
-      enabled: false,
-    },
-    legend: {
-      show: false,
-    },
-  },
-};
 
 class Admin extends Component {
   render() {
